@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+</body>
+</html>
+
+<script>
+	var codigo_a = "<br><center><h1><a href='?' title=''><--- Intentar de nuevo ---></a></h1></center>";
+
+	var nombre = prompt("Por favor, ingresa tu nombre:");
+	if (nombre === null) {
+		alert("Has cancelado la entrada.");
+	} else if (nombre === "") {
+		alert("Debes ingresar tu nombre.");
+		var actualizar_p = document.write(codigo_a);
+	} else {
+		var mensaje = "Hola " + nombre + ":\n\n" +
+			"*Dirección para recibimiento de las Cartas *💌✉️🎊🎀🎈\n" +
+			"Carrera 13A #12-59 Piso 2. Barrio Sagrada Familia.\n" +
+			"*Indicaciones:* Casa Blanca puerta de madera. Tocar el timbre. Dirección se ubica iniciando a subir la transversal que conduce hacia la Villa Olímpica por detrás de la Clínica Santa Cruz de la Loma.\n\n" +
+			"♡Misionera que recibe:\n" +
+			"Danisa Sandoval Cel. 3124751212\n\n" +
+			"*Por favor ser muy diligentes en la entrega*🧏🏼‍♀️\n\n" +
+			"Hay Plazo hasta Domingo 20 de Agosto 2:00 p.m\n\n" +
+			"Si algún familiar que desee enviar de manera digital o correo electrónico enviar al siguiente:\n" +
+			"daniquiencomodios@gmail.com\n\n" +
+			"Recibimiento\n" +
+			"Fecha: Lunes festivo 21 de Agosto del 2023\n" +
+			"💒Parroquia María Auxiliadora\n" +
+			"Carrera 9 # 8-46 San Gil.\n" +
+			"Eucaristia 6:00 p.m.\n" +
+			"Recibimiento 7:00 p.m.\n\n" +
+			"Contamos con tu presencia:\n" +
+			"Att. Familiar y amigos y Misionero...\n\n" +
+			"Leer muy atentamente este mensaje que se dan indicaciones importantes. Recuerden que pueden enviar dulces o galletas a sus seres queridos o detalles religiosos.";
+
+		var numero_n = prompt("Por favor, ingresa el número de WhatsApp sin espacios:");
+		var numero = parseInt(numero_n);
+
+		if (numero_n === "") {
+			alert("Debes ingresar un número de teléfono.");
+			var actualizar_p = document.write(codigo_a);
+		} else {
+			var part1 = "<br><br><center><h1>Vas a chatear con el número ";
+			var part2 = numero;
+			var part3 = " en Colombia <br>";
+			var part4 = "<br><a href='https://wa.me/57";
+			var part5 = numero;
+			var part6 = "&text=" + encodeURIComponent(mensaje) + "' title='click'> <---  Click aquí ---></a></h1></center>";
+
+			document.write(part1 + part2 + part3 + part4 + part5 + part6);
+		}
+	}
+</script>
