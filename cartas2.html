@@ -5,19 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Generador de Enlace de WhatsApp</title>
 	<link rel="stylesheet" href="">
+	<br>
+	var codigo_a = "<br><center><h1><a href='?' title=''><--- Intentar de nuevo ---></a></h1></center>";
 </head>
 <body>
 <script>
 	var codigo_a = "<br><center><h1><a href='?' title=''><--- Intentar de nuevo ---></a></h1></center>";
 
 	// Solicitar el nombre de la persona
-	var nombre = prompt("Por favor, ingresa tu nombre");
+	var nombre = prompt("Por favor, ingresa nombre de la persona");
 	if (nombre === null || nombre === "") {
 		alert("Debes ingresar un nombre válido.");
 		var actualizar_p = document.write(codigo_a);
 	} else {
 		// Solicitar el número de WhatsApp
-		var numero_n = prompt("Hola " + nombre + ". Por favor, ingresa tu número de WhatsApp sin espacios");
+		var numero_n = prompt("Hola " + nombre + ". Por favor, ingresa el número de WhatsApp sin espacios");
 		var numero = parseInt(numero_n);
 
 		// Condición si el número está vacío
